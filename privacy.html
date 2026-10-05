@@ -1,0 +1,94 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Privacy Policy | Agent Task Hub Backup</title>
+    <style>
+      :root {
+        color-scheme: light dark;
+        font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      }
+
+      body {
+        margin: 0;
+        background: Canvas;
+        color: CanvasText;
+        line-height: 1.55;
+      }
+
+      main {
+        box-sizing: border-box;
+        max-width: 720px;
+        margin: 0 auto;
+        padding: 56px 24px;
+      }
+
+      h1 {
+        margin: 0 0 8px;
+        font-size: 2rem;
+        line-height: 1.2;
+      }
+
+      h2 {
+        margin: 32px 0 8px;
+        font-size: 1.2rem;
+      }
+
+      a {
+        color: LinkText;
+      }
+
+      .updated {
+        color: color-mix(in srgb, CanvasText 70%, transparent);
+      }
+    </style>
+  </head>
+  <body>
+    <main>
+      <p><a href="index.html">Agent Task Hub Backup</a></p>
+      <h1>Privacy Policy</h1>
+      <p class="updated">Last updated: October 5, 2026</p>
+
+      <h2>Purpose</h2>
+      <p>
+        Agent Task Hub Backup is used by the deployment owner to store scheduled
+        backups of a self-hosted Agent Task Hub instance in that owner's Google
+        Drive account.
+      </p>
+
+      <h2>Google Drive access</h2>
+      <p>
+        The integration uses the Google Drive <code>drive.file</code> scope. It
+        can create, read, update, and delete only the files and folders it uses
+        for backups. It does not request permission to browse or manage unrelated
+        files in the owner's Google Drive.
+      </p>
+
+      <h2>Data handled</h2>
+      <p>
+        Each backup can include the Agent Task Hub SQLite database and uploaded
+        artifacts from the self-hosted deployment. The content is transferred
+        directly from the owner's local Docker environment to the owner's Google
+        Drive account.
+      </p>
+
+      <h2>Retention and sharing</h2>
+      <p>
+        Successful backups are removed from the dedicated backup folder after
+        seven days. The integration does not sell, share, or use backup content
+        for advertising, analytics, or any purpose other than backup and recovery.
+      </p>
+
+      <h2>Controls</h2>
+      <p>
+        The owner can stop backups, delete backup files, or revoke the Google
+        Drive authorization at any time through their local deployment or Google
+        Account permissions.
+      </p>
+
+      <h2>Contact</h2>
+      <p>Questions about this integration can be sent to althurzard@gmail.com.</p>
+    </main>
+  </body>
+</html>
